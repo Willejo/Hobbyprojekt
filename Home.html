@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--Sidan är under uppbyggnad. Just ligger mest fokus på layout och testa olika funktioner.-->
+<html lang="SE"><!--lang definierar vilket språk hemsidan är skriven på. Bra att ha med
+om sidan ska översättas.-->
+	<head>
+		<title>Avengers fansite</title>
+		<meta charset="utf-8"> <!--Definierar att åäö kan skrivas ut-->
+		<!--Koden nedan gör det möjligt att köra HTML5 script på IE 9.-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/➥
+				html5.js"></script>
+		<![endif]-->
+		<meta name="author" content="Viktor Unosson"><!--Namn på författaren till hemsidan-->
+		<link rel="stylesheet" type="text/css" href="desktop.css"><!--Koppling till extern CSS-fil för desktop.-->
+		<link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)"><!--Koppling till extern CSS-fil för mobil.-->
+	</head>
+	<body>
+		<div class="wrapper"> <!--En div som omsluter hela sidans innehåll. Ligger innanför body.-->
+			<header class="top-header"> <!--Huvudrubrik för hemsidan.-->
+				<a href="Home.html"><!--Loggan uppe till vänster är klickbar och tar besökaren tillbaka till förstasidan.-->
+					<img src="Bilder/logo.png" alt="Avengers logo" class="logo"><!--Avengers loga.-->
+				</a>
+				<h1>Avengers fansite!</h1>
+			</header>
+			<nav><!--Navigationsrad innehållande en dropdown-meny med samtliga filmer. I nuläget är länkarna inte
+			klickbara. Kommer kopplas i takt med att varje sida blir klar.-->
+				<ul class="navigation-top">
+					<li class="nav-content"><a class="home active" href="Home.html">Hem</a></li>
+					<li class="dropdown">
+						<a class="dropbtn" href="#Phase1">Phase 1</a>
+						<div class="dropdown-content">
+							<a href="IronMan.html">Iron Man (2008)</a>
+							<a href="#TheIncredibleHulk.html">The Incredible Hulk (2008)</a>
+							<a href="#IronMan2.html">Iron Man 2 (2010)</a>
+							<a href="#Thor.html">Thor (2011)</a>
+							<a href="#CaptainAmericaFirst.html">Captain America: First Avenger (2011)</a>
+							<a href="#TheAvengers.html">The Avengers (2012)</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="dropbtn" href="#Phase 2">Phase 2</a>
+						<div class="dropdown-content">
+							<a href="#IronMan3.html">Iron Man 3 (2013)</a>
+							<a href="#ThorDarkWorld.html">Thor: The Dark World (2013)</a>
+							<a href="#CaptainAmericaWinterSoldier.html">Captain America: The Winter Soldier (2014)</a>
+							<a href="#GuardianOfTheGalaxy.html">Guardian of the Galaxy (2014)</a>
+							<a href="#AvengersAgeOfUltron.html">Avengers: Age of Ultron (2015)</a>
+							<a href="#Ant-Man.html">Ant-Man (2015)</a>
+						</div>
+					</li>				
+					<li class="dropdown">
+						<a class="dropbtn" href="#Phase 3">Phase 3</a>
+						<div class="dropdown-content">
+							<a href="#CapAmeCivilWar.html">Captain America: Civil War (2016)</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="dropbtn" href="#Kommande">Kommande</a>
+						<div class="dropdown-content">
+							<a href="#">Doctor Strange (2016)</a>
+							<a href="#">Guardians of the Galaxy Vol. 2 (2017)</a>
+							<a href="#">Spider-Man: Homecoming (2017)</a>
+							<a href="#">Thor: Ragnarok (2017)</a>
+							<a href="#">Black Panther (2018)</a>
+							<a href="#">Avengers: Infinity War - Part 1 (2018)</a>
+							<a href="#">Ant-Man and the Wasp (2018)</a>
+							<a href="#">Captain Marvel (2019)</a>
+							<a href="#">Avengers: Infinity War - Part 2 (2019)</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="content"><!--Div som styr placering av texten.-->
+				<main><!--Huvuddelen på sidan innehåller flera olika delar.-->
+					<section><!--En section som är tänkt att fungera som heltäckande, innehållet kommer vara unikt för denna sida.-->
+						<header>
+							<h2>Lorem Ipsum</h2>
+						</header>
+						<div class="slideshow"><!--Ett bildspel, med lite bilder från Avengers-filmerna. I nuläget innehåller bildspelet fyra bilder.-->
+							<figure>
+								<img class="top size-slideshow" src="Bilder/TeamAvengers.jpg" alt="Entire team Avengers from Age of Ultron">
+							</figure>
+							<figure>
+								<img class="middle1 size-slideshow" src="Bilder/IronMan-Stark.jpg" alt="Tony Stark in the Iron Man suit without his helmet.">
+							</figure>
+							<figure>
+								<img class="middle2 size-slideshow" src="Bilder/Blackwidow.jpg" alt="Black Widow">
+							</figure>
+							<figure>
+								<img class="bottom size-slideshow" src="Bilder/Thor.jpg" alt="Thor">
+							</figure>
+						</div>
+						<!--Tanken är att varje article ska innehålla en kort beskrivande text om de olika Avenegers-filmerna.-->
+						<article>
+						<header>
+							<h2>Lorem Ipsum</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis suscipit ex. Praesent consequat sit amet augue ac hendrerit.
+						Fusce et quam ipsum. Phasellus vestibulum, metus et bibendum sagittis, velit dui luctus magna, vitae aliquet sem 
+						nibh id odio. In venenatis iaculis aliquet. Quisque ultricies venenatis tellus, quis sollicitudin orci egestas at. Aenean fermentum, urna vel tempor 
+						lobortis, ipsum mi semper orci, in dapibus turpis eros in leo. Cras convallis ex sit amet cursus porta. Vestibulum convallis placerat 
+						fermentum. Nullam fermentum turpis sed ex pharetra, sed elementum felis ultricies. Sed interdum justo quam, eu aliquam mi volutpat vel. 
+						Vivamus sit amet libero at diam sodales accumsan. Vestibulum in porta ipsum, lacinia maximus leo.</p>
+						</article>
+						<article>
+						<header>
+							<h2>Lorem Ipsum</h2>
+						</header>
+						<p>Morbi a eleifend sem. Integer a urna tortor. Sed dapibus, lorem ac scelerisque aliquam, urna nibh ultrices sem, vitae aliquam felis 
+						nisi id elit. Etiam semper fringilla augue, non dignissim mi aliquet eget. Proin finibus fringilla tortor, vitae iaculis risus viverra id. 
+						Aenean sed enim ut sapien maximus consectetur ac et nulla. Quisque vitae molestie orci. Cras feugiat pharetra nisl, quis iaculis nisl 
+						vestibulum eget. Suspendisse id mattis tortor. Nunc tincidunt elementum dolor. Curabitur augue felis, feugiat sit amet viverra et, 
+						hendrerit a leo.</p>
+						</article>
+						<article>
+						<header>
+							<h2>Lorem Ipsum</h2>
+						</header>
+						<p>Quisque in euismod ex. Morbi sed tempor sem. Phasellus aliquet neque eget dui iaculis euismod. Praesent posuere, odio sed pulvinar 
+						tincidunt, tortor dui malesuada ipsum, at rhoncus elit nisi at tortor. Nulla ac pharetra urna. Duis sit amet convallis ante. Mauris tempor 
+						est nec mi ultrices elementum. Vivamus massa lectus, condimentum at sagittis a, sagittis sit amet elit.</p>
+						<p>Nam urna dui, rutrum non mollis id, ullamcorper tincidunt dui. Phasellus eu maximus tortor. Phasellus eget libero sapien. Cras eu lacus 
+						vel magna viverra ultrices ut eu nisl. Pellentesque vel venenatis dolor. Sed justo neque, condimentum sit amet magna sit amet, rutrum faucibus 
+						sapien. Integer in turpis eros. Fusce vitae magna eu orci ornare ornare a malesuada augue. In hac habitasse platea dictumst.</p>
+						</article>
+						<article>
+						<header>
+							<h2>Lorem Ipsum</h2>
+						</header>
+						<p>Etiam et enim blandit leo efficitur posuere ut ac ipsum. Sed lacinia quam at quam accumsan, eu convallis leo lacinia. Fusce quis libero metus. 
+						Nulla facilisi. Duis sit amet pellentesque ligula, nec rutrum neque. Quisque porta euismod nisi, a consequat turpis gravida sed. Cras eros augue, 
+						tincidunt sit amet congue at, pretium eu ante. Vivamus quis finibus elit, in rhoncus sapien. Suspendisse ac lacus a ligula porttitor malesuada id 
+						quis erat. Sed neque purus, congue id pellentesque blandit, dictum et massa. Nullam semper libero a nibh venenatis molestie. Donec sollicitudin 
+						quam facilisis felis tincidunt, quis luctus dui volutpat. Proin nibh lectus, aliquam sed molestie et, egestas id neque. Donec semper a purus a 
+						aliquet. Donec mi est, viverra at quam id, ultricies tincidunt sem.</p>
+						</article>
+					</section>
+				</main>
+			</div>
+			<footer><!--Sidans footer, innehåller för tillfället endast senast uppdaterad. Tanken är att det ska komma till en webb-karta när sidorna är färdiga.-->
+				<h2>Footer</h2>
+				<p>Senast uppdaterad: <time datetime="2016-05"> maj 2016</time>.</p>
+			</footer>
+		</div>
+	</body>
+</html>
